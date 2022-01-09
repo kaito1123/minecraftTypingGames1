@@ -2,7 +2,7 @@
 
 {
   const target = document.getElementById('target');
-  
+
   function setWord() {
     word = words.splice(Math.floor(Math.random() * words.length), 1)[0];
     target.textContent = word;
@@ -19,14 +19,11 @@
   let loc = 0;
   let startTime;
   let isPlaying;
-
-
+  
   document.addEventListener('click', () => {
     const disabled = document.getElementById('disabled');
     disabled.remove();
-  });
-  
-  document.addEventListener('click', () => {
+
     if (isPlaying === true) {
       return;
     }
